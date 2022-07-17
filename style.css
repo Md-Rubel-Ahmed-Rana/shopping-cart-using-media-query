@@ -1,0 +1,78 @@
+
+body > h1{
+    background-color: brown;
+    color: white;
+    font-family: arial;
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.food{
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.food > img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+/* small device */
+@media screen and (max-width: 576px) {
+    .food{
+        background-color: darkorange;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+
+/* Medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .food{
+        background-color: blue;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+
+ /* large device */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .food{
+        background-color: lawngreen;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+}
+
+ /* Extra large device */
+@media screen and (min-width: 1200px){
+    .food{
+        background-color: magenta;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+}
